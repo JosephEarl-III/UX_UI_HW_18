@@ -24,34 +24,70 @@ h3 {
 	font-size: 28px;
 	margin-top: 16px;
 }
-header {
-	width: 1640px;
-	margin-bottom: 120px;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+h4 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	text-transform: uppercase;
 }
-.logo {
-	width: 40%;	
+p {
+	line-height: 162.5%;
+}
+
+button {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	background: #E0F2D7 0% 0% no-repeat padding-box;
+	border: 1px solid #E0F2D7;
+	border-radius: 16px;
+	opacity: 1;
+}
+button:hover {
+	background-color: #25263D;
+	color: white;
+}
+img.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	transition: width .2s ease;
+}
+.logo:hover {
+	width: 42%;
 }
 ul.navgroup {
+	text-align: center;
 	list-style-type: none;
 	margin-right: 48px;
+	margin-bottom: 112px;
 }
 li.nav {
 	display: inline-block;
-	padding: 0 20px 0 20px;
+	margin: 0 20px 0 20px;
 	font-family: 'Libre Franklin', sans-serif;
 	font-weight: 300;
 	font-size: 28px;
+	transition: border-bottom .1s ease;
+}
+.current {
+	border-bottom: 3px solid #25263D;
+}
+li.nav:hover {
+	border-bottom: 3px solid #25263D;		
 }
 section {
 	display: grid;
+	justify-content: center;
 	grid-template-columns: 690px 950px;
-	grid-template-rows: 495px 296;
+	grid-template-rows: 495px 296px 467px 367px;
 	grid-template-areas: 
 		"heroimg headerSection"
 		"storySection summarySection"
+		"knowledgeSection portfolioSection"
+		"connectSection portfolioSection";
+	margin-bottom: 160px;
 }
 #left {
 	width: 690px;	
@@ -60,6 +96,8 @@ section {
 	width: 950px;
 	
 }
+
+/*About Me section*/
 #heroimg {
 	width: 100%;
 	grid-area: heroimg;
@@ -109,6 +147,100 @@ section {
 	padding-right: 24px;
 	grid-area: summarySection;
 }
+
+/*My Work section */
+#portfolioSection {
+	grid-row: 3 / span 2;
+	grid-area: portfolioSection;
+}
+.portfolioText {
+	padding-left: 16px;
+	padding-right: 16px;
+	
+}
+.rightJustify {
+	text-align: right;
+}
+#portfolioHeader {
+	text-align: center;
+	margin-bottom: 80px;
+}
+#portfolioOne {
+	width: 950px;
+	display: flex;
+	padding-bottom: 24px;
+	
+}
+#LACimg {
+	width: 34%;
+	height: 46%;
+	border: 2px solid #8FA580;
+	box-shadow: 0px 3px 6px #00000029;
+	margin-right: 8px;
+}
+#portfolioTwo {
+	width: 950px;
+	height: 341px;
+	display: flex;
+	flex-direction: row;
+}
+#PoppyImg {
+	width: 21%;
+	height: 81%;
+	margin-left: 8px;
+	box-shadow: 0px 3px 6px #00000029;
+	border: 2px solid #EBE3DF;
+	opacity: 1;
+}
+#portfolioButton {
+	width: 259px;
+    height: 30px;
+	font-size: 14px;
+	margin-left: 160px;
+}
+
+/*Skills & Contact Section*/
+
+#knowledgeSection {
+	grid-area: knowledgeSection;
+	width: 690px;
+	height: 467px;
+	padding-top: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#toolboxIcon {
+	margin-top: -24px;
+	margin-left: 32px;
+}
+#tools {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 32px;
+}
+.icon {
+	display: inline-block;
+	margin: 8px;
+}
+.email {
+	transform: translate(0, -4px)
+}
+#connectSection {
+	grid-area: connectSection;
+	width: 690px;
+	height: 399px;
+	background: #25263D 0% 0% no-repeat padding-box;
+	border: 1px solid #707070;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.darkBack {
+	color: white;
+}
 footer {
 	width: 1640px;
 	margin-top: 160px;
@@ -116,169 +248,4 @@ footer {
 	flex-direction: column;
 	align-items: center;
 }
-.contactIcons {
-	
-}
-/*body {
-	top: 0px;
-	left: 0px;
-	width: 1920px;
-	height: 2232px;
-	font-family: Sabon LT Std, Garamond, Times New Roman, serif;
-	font-size: 18px;
-	color: #25263D;
-	background: #FFFFFF 0% 0% no-repeat padding-box;
-	opacity: 1;
-}
-header {
-	width: 1920;
-	height: 200;
-	margin-bottom: 120px;
-}
-footer {
-	display: flex;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-}
-section {
-	display: flex;
-	justify-content: center;
-}
-.logo {
-	width: 25%;
-	opacity: 1;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-ul.navgroup {
-	list-style-type: none;
-	text-align: center;
-	margin-right: 50px;
-	
-}
-li.nav {
-	display: inline-block;
-	padding: 0 20px 0 20px;
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 300;
-}
-.left {
-	float: left;
-	width: 690px;
-	
-}
-.right {
-	float: right;
-	width: 950px;
-	
-}
-.heroimg {
-	width: 690px;
-	height: 495px;
-	top: 223px;
-	left: 140px;
-}
-.hero {
-	width: 690px;
-	height: 495px;
-	top: 223px;
-	left: 140px;
-}
-.headerSection {
-	display: flex;
-	top: 223px;
-	left: 830px;
-	width: 950px;
-	height: 495px;
-	background: #89A67C 0% 0% no-repeat padding-box;
-	opacity: 1;
-	text-align: center;
-	justify-content: center;
-	flex-direction: column;
-}
-h1 {
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 600;
-	font-size: 56px;
-}
-h2 {
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 300;
-	font-size: 48px;
-}
-h3 {
-	font-family: 'Libre Franklin', sans-serif;
-	font-weight: 300;
-	font-size: 28px;
-	margin-top: 16px;
-}
-#name {
-	padding: 0px;
-	margin: 0px 0px 0px 80px;
-	align-self: flex-start;
-}
-#position {
-	padding: 0px;
-	margin: 0px;
-}
-#position2 {
-	padding: 0px;
-	margin: 0px 80px;
-	align-self: flex-end;
-}
-.LACimg {
-	width: 321px;
-	height: 214px;
-}
-.PoppyImg {
-	width: 201px;
-	height: 301px;
-}
-.summarySection {
-	top: 718px;
-	left: 830px;
-	width: 950px;
-	height: 296px;
-	background-color: #ECE3DE;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-basis: auto;
-}
-.summaryText {
-	width: 674px;
-	height: 214px;
-	flex-basis: auto;
-	flex-wrap: wrap;
-}
-.portfolioSection {
-	width: 950px;
-	height: 767px;
-	display: flex;
-	flex-direction: column;
-}
-#portfolioHeader {
-	text-align: center;
-	margin-bottom: 80px;
-}
-.portfolioOne {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	padding-top: 0px;
-	margin-bottom: 240px;
-}
-.textOne {
-	width: 536px;
-	flex-basis: auto;
-}
-.portfolioTwo {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-*/
+
