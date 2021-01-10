@@ -333,6 +333,12 @@ footer {
 }
 /*Phone media query*/
 @media only screen and (max-width: 600px) {
+	img.logo {
+		width: 60%;
+	}
+	.logo:hover {
+		width: 62%;
+	}
 	ul.navgroup {
 		margin-right: 48px;
 		margin-bottom: 56px;
