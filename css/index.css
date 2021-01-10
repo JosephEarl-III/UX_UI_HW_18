@@ -87,7 +87,6 @@ section {
 		"storySection summarySection"
 		"knowledgeSection portfolioSection"
 		"connectSection portfolioSection";
-	margin-bottom: 160px;
 }
 #left {
 	width: 690px;	
@@ -107,7 +106,7 @@ section {
 	width: 80%;
 	grid-area: storySection;
 	padding-left: 40px;
-	padding-top: 61px;
+	padding-top: 56px;
 }
 #headerSection {
 	width: 950px;
@@ -185,8 +184,8 @@ section {
 	flex-direction: row;
 }
 #PoppyImg {
-	width: 21%;
-	height: 81%;
+	width: 24%;
+	height: 88%;
 	margin-left: 8px;
 	box-shadow: 0px 3px 6px #00000029;
 	border: 2px solid #EBE3DF;
@@ -242,10 +241,225 @@ section {
 	color: white;
 }
 footer {
-	width: 1640px;
 	margin-top: 160px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+/*Laptop media query*/
+@media only screen and (max-width: 1440px) {
+	section {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 518px 712px;
+		grid-template-rows: 495px 370px 584px 459px;
+		grid-template-areas: 
+		"heroimg headerSection"
+		"storySection summarySection"
+		"knowledgeSection portfolioSection"
+		"connectSection portfolioSection";
+	}
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 54px;
+	}
+	h2 {
+	font-size: 46px;
+	}
+	h3 {
+	font-size: 26px;
+	}
+	h4 {
+	font-size: 16px;
+}
+	p {
+	line-height: 150%;
+}
+	#left {
+		width: 518px;	
+	}
+	#right {
+		width: 712px;
+	}
+	#headerSection {
+		width: 712px;
+		height: 495px;
+	}
+	#name {
+	margin: 0px 0px 0px 40px;
+  	}
+	#position2 {
+	margin: 0px 40px;
+}
+	#summarySection {
+	width: 648px;
+	height: 296px;
+	}
+	#portfolioHeader {
+	margin-bottom: 40px;
+}
+	#portfolioOne {
+	width: 712px;
+	padding-bottom: 24px;
+	}
+	#portfolioTwo {
+	width: 712px;
+	height: 280px;
+	}
+	#storySection{
+		width: 518;
+		padding-top: 80px;
+	}
+	#knowledgeSection {
+		width: 518px;
+		margin-top: 120px;
+		margin-bottom: -108px;
+		padding-top: 48px;
+	}
+	#connectSection {
+		grid-area: connectSection;
+		width: 518px;
+		height: 399px;
+	}
+	#portfolioButton {
+		margin-left: 80px;
+	}
+	footer {
+		margin-top: -180px;
+	}
 
+}
+/*Phone media query*/
+@media only screen and (max-width: 600px) {
+	ul.navgroup {
+		margin-right: 48px;
+		margin-bottom: 56px;
+	}
+	li.nav {
+		margin: 0 12px 0 12px;
+		font-size: 16px;
+	}
+	section {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 378px;
+		grid-template-rows: 495px 495px 370px 370px 467px 584px 459px;
+		grid-template-areas: 
+		"heroimg"
+		"headerSection"
+		"storySection"
+		"summarySection"
+		"knowledgeSection"
+		"portfolioSection"
+		"connectSection";
+	}
+	body {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	h4 {
+		font-size: 18px;
+}
+	p {
+		line-height: 150%;
+}
+	#headerSection {
+		width: 378px;
+		height: 225px;
+		margin-top: -160px;
+	}
+	#name {
+		margin: 0px 0px 0px 16px;
+  	}
+	#position2 {
+		margin: 0px 16px;
+}
+	#summarySection {
+		width: 302px;
+		height: 378px;
+		margin-top: 364px;
+		padding-left: 36.5px;
+		padding-right: 36.4px;
+	}
+	#portfolioSection {
+		margin-top: 384px;
+		text-align: center;
+	}
+	#portfolioHeader {
+		text-align: center;
+		margin-right: 328px;
+	}
+	#LACimg {
+		width: 302px;
+		height: 201px;
+		margin-right: 0px;
+	}
+	#portfolioOne {
+		width: 378px;
+		margin-bottom: 380px;
+		flex-direction: column;
+		align-items: center;
+	}
+	#portfolioTwo {
+		width: 378px;
+		height: 280px;
+		margin-top: 48px;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.rightJustify {
+		text-align: center;
+	}
+	#PoppyImg {
+		width: 201px;
+		height: 301px;
+		margin-left: 0px;
+	}
+	#storySection{
+		width: 370px;
+		height: 349px;
+		margin-top: 160px;
+		padding: 0;
+		padding-left: 4px;
+		padding-right: 4px;
+		padding-top: 80px;
+	}
+	#knowledgeSection {
+		width: 378px;
+		margin-top: 324px;
+		margin-bottom: -108px;
+		padding-top: 48px;
+	}
+	#toolboxIcon {
+		margin: 0;
+	}
+	#tools {
+		margin-right: 36px;
+	}
+	#connectSection {
+		grid-area: connectSection;
+		width: 378px;
+		height: 199px;
+		margin-top: 1400px;
+	}
+	#portfolioButton {
+		margin-right: 300px;
+		width: 188px;
+	}
+	footer {
+		margin-top: 80px;
+	}
+	.footersection {
+		display: none;
+	}
+}
